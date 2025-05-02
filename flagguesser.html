@@ -1,0 +1,45 @@
+<body>
+<div style="background-color:red;color:black;padding:20px;">
+<h1 class="inset">Flag Guessing Game</h1>
+<br> <br><br><br>
+</div>
+<div style="background-color:white;color:black;padding:20px;">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_Eswatini.svg/1920px-Flag_of_Eswatini.svg.png" alt="Flag" style="width: 300 px;height:250px;">
+<br> <br><br><br><br> <br><br><br>
+</div>
+<div style="background-color:blue;color:black;padding:20px;">
+ <input type="text" 
+               id="guessField" 
+               class="guessField">
+
+ <input type="submit" 
+               value="Submit guess" 
+               class="guessSubmit" 
+               id="submitguess">
+<br> <br><br><br><br> <br><br><br>
+</div>
+<p id="demo">.</p>
+ <script type="text/javascript">
+
+    
+        let y = Estawini;
+
+        let guess = 1;
+
+        document.getElementById("submitguess").onclick = function () {
+
+               
+            let x = document.getElementById("guessField").value;
+
+            if (x == y) {
+                document.getElementById("demo").innerHTML = "Correct, this is the flag of Estawini."
+            }
+
+            else if (x ≠ y) {
+                guess++;
+                document.getElementById("demo").innerHTML = "Try a different country!"
+            }
+          
+    </script>
+</body>
+</html>
