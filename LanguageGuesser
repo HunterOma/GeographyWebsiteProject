@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h1.inset {border-style: inset;}
+h1 {
+color: white;
+text-align: center;
+
+}
+p.white {
+color: black;
+text-align: center;
+
+}
+p {
+color: white;
+text-align: center;
+}
+a {
+color: white;
+text-align: center;
+}
+img {
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div style="background-color:red;color:black;padding:20px;">
+<h1 class="inset">Linguistics Guessing</h1>
+<p> Guess which language the word below originates from </p>
+<br> <br><br><br>
+</div>
+<div style="background-color:white;color:black;padding:20px;">
+<h1 style="color:black;"> ᐃᓄᐃᑦ ᐅᖃᐅᓯᖏᑦ </h1>
+<h2 style="text-align: center;"> Hint: Northern Canada </h2>
+<br> <br><br><br><br> <br><br><br>
+</div>
+<div style="background-color:blue;padding:20px;">
+<input type="submit" 
+               value="Submit guess" 
+               class="guessSubmit" 
+               id="submitguess">
+<br> <br><br><br><br> <br><br><br>
+</div>
+<p id="demo">.</p>
+<script type="text/javascript">
+  document.getElementById("submitguess").onclick = function () {
+ var firstQuestion = prompt("What language is this from?");
+switch (firstQuestion) {
+    case "Inuit":
+        confirm("Correct, this is Inuit.");
+        break;
+    default:
+        confirm("Incorrect, this is Inuit.");
+        break;
+}
+}
+    </script>
+</body>
+</html>
